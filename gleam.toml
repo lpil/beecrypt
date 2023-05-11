@@ -1,0 +1,19 @@
+name = "beecrypt"
+version = "0.1.0"
+description = "Buzzing Gleam bindings to the Erlang bcrypt hashing library"
+
+licences = ["Apache-2.0"]
+repository = { type = "github", user = "lpil", repo = "beecrypt" }
+links = [
+  { title = "Website", href = "https://gleam.run" },
+  { title = "Sponsor", href = "https://github.com/sponsors/lpil" },
+]
+
+[dependencies]
+gleam_stdlib = "~> 0.28"
+gleam_erlang = "~> 0.18"
+gleam_crypto = "~> 0.3"
+bcrypt = "~> 1.2"
+
+[dev-dependencies]
+gleeunit = "~> 0.10"
