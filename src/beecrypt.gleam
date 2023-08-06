@@ -13,7 +13,7 @@ pub fn verify(password: String, hash: String) -> Bool {
   crypto.secure_compare(<<hash:utf8>>, <<hashed:utf8>>)
 }
 
-external type BcrypeErlangError
+type BcrypeErlangError
 
 fn generate_salt() -> String {
   let assert Ok(salt) = gen_salt()
@@ -25,8 +25,8 @@ fn hash_with_salt(password: String, salt: String) -> String {
   charlist.to_string(hash)
 }
 
-external fn gen_salt() -> Result(Charlist, BcrypeErlangError) =
-  "bcrypt" "gen_salt"
+@external(erlang, "bcrypt", "gen_salt")
+fn gen_salt() -> Result(Charlist, BcrypeErlangError)
 
-external fn hashpw(String, String) -> Result(Charlist, BcrypeErlangError) =
-  "bcrypt" "hashpw"
+@external(erlang, "bcrypt", "hashpw")
+fn hashpw(a: String, b: String) -> Result(Charlist, BcrypeErlangError)
