@@ -3,17 +3,17 @@
 
 packages = [
   { name = "bcrypt", version = "1.2.1", build_tools = ["rebar3"], requirements = ["poolboy"], otp_app = "bcrypt", source = "hex", outer_checksum = "DC4973B57C0F76C86D5275C8056E12878BB5526876481EC799D015A7B19515B6" },
-  { name = "gleam_bitwise", version = "1.2.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleam_bitwise", source = "hex", outer_checksum = "6064699EFBABB1CA392DCB193D0E8B402FB042B4B46857B01E6875E643B57F54" },
-  { name = "gleam_crypto", version = "0.3.1", build_tools = ["gleam"], requirements = ["gleam_bitwise", "gleam_stdlib"], otp_app = "gleam_crypto", source = "hex", outer_checksum = "C356D26C3EDFF495F2C73378C4D9C47435F729F5852ECA8CD6F635515317E630" },
-  { name = "gleam_erlang", version = "0.18.1", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleam_erlang", source = "hex", outer_checksum = "C69F59D086AD50B80DE294FB0963550630971C9DC04E92B1F7AEEDD2C0BE226C" },
-  { name = "gleam_stdlib", version = "0.28.2", build_tools = ["gleam"], requirements = [], otp_app = "gleam_stdlib", source = "hex", outer_checksum = "088E334A00C9530D4B194F31406E51B6E4E4697C6A380D11591E60CC2F239724" },
-  { name = "gleeunit", version = "0.10.1", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleeunit", source = "hex", outer_checksum = "ECEA2DE4BE6528D36AFE74F42A21CDF99966EC36D7F25DEB34D47DD0F7977BAF" },
+  { name = "gleam_bitwise", version = "1.3.1", build_tools = ["gleam"], requirements = [], otp_app = "gleam_bitwise", source = "hex", outer_checksum = "B36E1D3188D7F594C7FD4F43D0D2CE17561DE896202017548578B16FE1FE9EFC" },
+  { name = "gleam_crypto", version = "0.4.0", build_tools = ["gleam"], requirements = ["gleam_bitwise", "gleam_stdlib"], otp_app = "gleam_crypto", source = "hex", outer_checksum = "42429CED0F838B40014E1C017B0495C46C311D08035D2C2D43B749B91A4374F6" },
+  { name = "gleam_erlang", version = "0.23.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleam_erlang", source = "hex", outer_checksum = "DA7A8E5540948DE10EB01B530869F8FF2FF6CAD8CFDA87626CE6EF63EBBF87CB" },
+  { name = "gleam_stdlib", version = "0.32.0", build_tools = ["gleam"], requirements = [], otp_app = "gleam_stdlib", source = "hex", outer_checksum = "07D64C26D014CF570F8ACADCE602761EA2E74C842D26F2FD49B0D61973D9966F" },
+  { name = "gleeunit", version = "1.0.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleeunit", source = "hex", outer_checksum = "D3682ED8C5F9CAE1C928F2506DE91625588CC752495988CBE0F5653A42A6F334" },
   { name = "poolboy", version = "1.5.2", build_tools = ["rebar3"], requirements = [], otp_app = "poolboy", source = "hex", outer_checksum = "DAD79704CE5440F3D5A3681C8590B9DC25D1A561E8F5A9C995281012860901E3" },
 ]
 
 [requirements]
-bcrypt = "~> 1.2"
-gleam_crypto = "~> 0.3"
-gleam_erlang = "~> 0.18"
-gleam_stdlib = "~> 0.28"
-gleeunit = "~> 0.10"
+bcrypt = { version = "~> 1.2" }
+gleam_crypto = { version = "~> 0.3" }
+gleam_erlang = { version = "~> 0.18" }
+gleam_stdlib = { version = "~> 0.28" }
+gleeunit = { version = "~> 1.0" }

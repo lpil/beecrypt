@@ -1,5 +1,6 @@
 name = "beecrypt"
 version = "0.2.0"
+gleam = ">= 0.32.0"
 description = "Buzzing Gleam bindings to the Erlang bcrypt hashing library"
 
 licences = ["Apache-2.0"]
@@ -16,4 +17,4 @@ gleam_crypto = "~> 0.3"
 bcrypt = "~> 1.2"
 
 [dev-dependencies]
-gleeunit = "~> 0.10"
+gleeunit = "~> 1.0"

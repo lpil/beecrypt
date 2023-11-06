@@ -5,6 +5,8 @@
 
 Buzzing Gleam bindings to the [Erlang bcrypt hashing library][erlang-bcrypt]!
 
+Unfortunately Erlang's bcrypt library does not currently support Windows.
+
 ## Usage
 
 Add it to your Gleam project:
