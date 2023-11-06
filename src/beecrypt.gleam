@@ -1,4 +1,4 @@
-import gleam/erlang/charlist.{Charlist}
+import gleam/erlang/charlist.{type Charlist}
 import gleam/crypto
 import gleam/string
 
