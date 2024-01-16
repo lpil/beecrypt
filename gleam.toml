@@ -1,5 +1,5 @@
 name = "beecrypt"
-version = "0.3.0"
+version = "0.3.1"
 gleam = ">= 0.32.0"
 description = "Buzzing Gleam bindings to the Erlang bcrypt hashing library"
 
@@ -11,9 +11,9 @@ links = [
 ]
 
 [dependencies]
-gleam_stdlib = "~> 0.28"
+gleam_stdlib = "~> 0.28 or ~> 1.0"
 gleam_erlang = "~> 0.18"
-gleam_crypto = "~> 0.3"
+gleam_crypto = "~> 0.3 or ~> 1.0"
 bcrypt = "~> 1.2"
 
 [dev-dependencies]
