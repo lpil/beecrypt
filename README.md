@@ -1,5 +1,10 @@
 # beecrypt 🐝
 
+> [!IMPORTANT]
+> Argon2 is a better password hashing algorithm, so unless you _really_ know
+> that you need bcrypt you should use the [argus](https://github.com/Pevensie/argus)
+> package instead of this one.
+
 [![Package Version](https://img.shields.io/hexpm/v/beecrypt)](https://hex.pm/packages/beecrypt)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/beecrypt/)
 
