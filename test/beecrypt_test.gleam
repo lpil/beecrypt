@@ -1,6 +1,6 @@
-import gleeunit
 import beecrypt
 import gleam/string
+import gleeunit
 
 pub fn main() {
   gleeunit.main()

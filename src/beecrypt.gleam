@@ -1,5 +1,5 @@
-import gleam/erlang/charlist.{type Charlist}
 import gleam/crypto
+import gleam/erlang/charlist.{type Charlist}
 import gleam/string
 
 pub fn hash(password: String) -> String {
