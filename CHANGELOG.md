@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.4.0 - 2025-05-14
+
+- Relaxed the dependency version constrains.
+
 ## v0.3.1 - 2024-01-16
 
 - Relaxed the stdlib version constraint to allow 0.x or 1.x.
